@@ -1,0 +1,164 @@
+/* Style global */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f8fb; /* bleu pâle */
+  color: #111;
+}
+
+/* Navigation */
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #e0e6ed !important;
+}
+
+.nav-link {
+  color: #e0e6ed !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #a9d6e5 !important;
+}
+
+/* Container principal */
+.container {
+  max-width: 800px;
+  margin: 120px auto 40px auto; /* espace sous la navbar */
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Titres */
+h2 {
+  color: #0d1b2a;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Coordonnées */
+.coordonnees p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+/* Formulaire */
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #1b263b;
+  outline: none;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Bouton */
+button {
+  background-color: #18741e;
+  color: #e0e6ed;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #415a77;
+  transform: translateY(-2px);
+}
+
+/* Confirmation */
+.confirmation {
+  display: none;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #a9d6e5;
+  color: #0d1b2a;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* Footer */
+footer {
+  background-color: #0d1b2a;
+  color: #e0e6ed;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+}
+
+footer a {
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+footer a:hover {
+  opacity: 0.7;
+}
+
+/* --- Responsive --- */
+
+/* Mobile */
+@media (max-width: 576px) {
+  .container {
+    margin: 100px 15px 30px 15px;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  input, textarea, button {
+    font-size: 0.95rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+/* Tablette */
+@media (min-width: 577px) and (max-width: 992px) {
+  .container {
+    margin: 110px 30px 30px 30px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 993px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+}

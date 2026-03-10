@@ -1,0 +1,65 @@
+/* Style général de la navbar */
+.navbar {
+  padding: 0.8rem 1rem;
+  background-color: #f8f9fa; /* couleur claire par défaut */
+  border-bottom: 2px solid #ddd;
+}
+
+/* Logo dimension uniforme */
+.navbar-brand img {
+  height: 45px;   /* hauteur fixe */
+  width: auto;    /* largeur proportionnelle */
+  margin-right: 10px;
+}
+
+/* Texte du logo */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #0d6efd; /* bleu Bootstrap */
+}
+
+/* Liens de navigation */
+.navbar-nav .nav-link {
+  font-weight: 500;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0d6efd; /* bleu au survol */
+}
+
+/* Bouton hamburger sur mobile */
+.navbar-toggler {
+  border: none;
+}
+
+/* Barre de recherche */
+form.d-flex input {
+  border-radius: 20px;
+}
+
+form.d-flex button {
+  border-radius: 20px;
+  padding: 0.4rem 1rem;
+}
+
+body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+    }
+    main {
+      flex: 1;
+    }
+    .card img {
+      height: 220px;       /* hauteur uniforme */
+      object-fit: cover;   /* recadre l’image sans la déformer */
+    }
+    .card:hover {
+      transform: scale(1.03);
+      transition: 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }

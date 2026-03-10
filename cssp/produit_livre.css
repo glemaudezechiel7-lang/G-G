@@ -1,0 +1,57 @@
+
+
+
+/* Style général des cartes */
+.card {
+  border: 1px solid #000;        /* Bordure noire fine */
+  border-radius: 8px;            /* Coins arrondis */
+  overflow: hidden;              /* Empêche débordement */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02);        /* Zoom léger au survol */
+}
+
+/* Images dans les cartes */
+.card img {
+  width: 100%;                   /* Remplit la largeur */
+  height: 250px;                 /* Hauteur uniforme */
+  object-fit: cover;             /* Coupe proprement */
+  display: block;
+  border-bottom: 1px solid #000; /* Séparation nette */
+}
+
+/* Corps des cartes */
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Titres */
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Boutons */
+.btn-success {
+  border: 1px solid #000;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Avis clients */
+.card.mb-2, .card {
+  border: 1px solid #000;
+  border-radius: 6px;
+}

@@ -1,0 +1,81 @@
+/* Cartes produits */
+.card {
+  background-color: #ffffff; /* fond blanc pour plus de légèreté */
+  border: 2px solid #000;    /* bordure noire fine */
+  border-radius: 12px;       /* coins arrondis élégants */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Image principale */
+.card-img-top {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 1px solid #000;
+  transition: transform 0.4s ease;
+}
+
+.card-img-top:hover {
+  transform: scale(1.05); /* effet zoom au survol */
+}
+
+/* Galerie miniatures */
+.row.row-cols-3 img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #000;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.row.row-cols-3 img:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Corps de la carte */
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.card-text {
+  color: #333;
+  font-size: 0.95rem;
+}
+
+/* Bouton */
+.btn-success {
+  background-color: #1b5e37;
+  border: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-success:hover {
+  background-color: #009624;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 200px;
+  }
+  .row.row-cols-3 img {
+    height: 70px;
+  }
+}

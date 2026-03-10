@@ -1,0 +1,91 @@
+/* Style global */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding-top: 80px; /* espace pour la navbar fixe */
+  color: #333;
+}
+
+/* Titre principal */
+h1 {
+  font-weight: bold;
+  color: #28a745;
+  margin-bottom: 30px;
+  animation: fadeInDown 1s ease;
+}
+
+/* Boutons principaux */
+.btn {
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Tableau du panier */
+.table {
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  animation: fadeInUp 1s ease;
+}
+
+.table th {
+  background: #343a40 !important;
+  color: white;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+/* Ligne du tableau avec effet hover */
+.table tbody tr:hover {
+  background-color: #e9f7ef;
+  transition: background-color 0.3s ease;
+}
+
+/* Total général */
+#cart-total {
+  color: #28a745;
+  font-size: 1.2rem;
+  animation: pulse 2s infinite;
+
+}
+
+
+/* Footer */
+footer {
+  margin-top: 60px;
+  background: #212529;
+  color: white;
+  padding: 25px;
+}
+
+footer a {
+  transition: transform 0.3s ease;
+}
+
+footer a:hover {
+  transform: scale(1.2);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
