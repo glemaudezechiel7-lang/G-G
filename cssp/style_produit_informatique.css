@@ -1,7 +1,4 @@
-.navbar {
-      padding: 0.8rem 1rem;
-      background-color: #0d6efd; /* bleu élégant */
-    }
+
     .navbar-brand {
       font-weight: bold;
       font-size: 1.5rem;
@@ -14,9 +11,9 @@
       font-weight: 500;
       transition: color 0.3s ease;
     }
-    .navbar-nav .nav-link:hover {
-      color: #ffc107 !important; /* jaune au survol */
-    }
+    .nav-link:hover {
+ color: rgb(214, 145, 17);
+}
 
     /* Cards */
     .card img {

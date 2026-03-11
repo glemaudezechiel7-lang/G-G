@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paiement | G & G GLOBAL</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    /* Barre de progression */
+    .progress-step {
+      width: 33%;
+      text-align: center;
+      font-weight: bold;
+    }
+    .progress-bar {
+      transition: width 0.5s ease;
+    }
+  </style>
+</head>
+<body>
+   <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+           <a class="navbar-brand" href="index.html">G & G GLOBAL</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalogue.html">Catalogue</a></li>
+            <li class="nav-item"><a class="nav-link" href="panier.html">Panier</a></li>
+            <li class="nav-item"><a class="nav-link" href="produit_vetement.html">Produit-Vetements</a></li>
+             <li class="nav-item"><a class="nav-link" href="produit_informatique.html">Produit-Informatique</a></li>
+              <li class="nav-item"><a class="nav-link" href="produit_medicament.html">Produit-Medicament</a></li>
+              <li class="nav-item"><a class="nav-link" href="produit_appareil_medical.html">Appareil medical</a></li>
+                <li class="nav-item"><a class="nav-link" href="produit_livre.html">Livre</a></li>
+                <li class="nav-item"><a class="nav-link" href="produit_cosmetique.html">COSMETIQUE</a></li>
+
+               <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Bannière -->
+  <section class="bg-primary text-white text-center py-5">
+    <h1 class="fw-bold">Procéder au paiement</h1>
+    <p class="lead">Choisissez votre méthode de paiement sécurisée</p>
+  </section>
+
+  <!-- Barre de progression -->
+  <div class="container my-4">
+    <div class="progress" style="height: 30px;">
+      <div id="progressBar" class="progress-bar bg-success" role="progressbar" style="width: 33%;">
+        Panier
+      </div>
+    </div>
+    <div class="d-flex justify-content-between mt-2">
+      <span class="progress-step">Panier</span>
+      <span class="progress-step">Paiement</span>
+      <span class="progress-step">Confirmation</span>
+    </div>
+  </div>
+
+  <!-- Options de paiement -->
+  <div class="container my-5">
+    <div class="row g-4">
+    <!-- Carte bancaire -->
+    <div class="col-md-6">
+      <div class="card shadow h-100">
+        <div class="card-body">
+          <h4 class="card-title">Paiement par Carte Bancaire</h4>
+          <form id="cardForm">
+            <div class="mb-3">
+              <label for="cardNumber" class="form-label">Numéro de carte</label>
+              <input type="text" class="form-control" id="cardNumber" placeholder="XXXX XXXX XXXX XXXX" required>
+            </div>
+            <div class="mb-3">
+              <label for="cardName" class="form-label">Nom sur la carte</label>
+              <input type="text" class="form-control" id="cardName" required>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="expiry" class="form-label">Expiration</label>
+                <input type="text" class="form-control" id="expiry" placeholder="MM/AA" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="cvv" class="form-label">CVV</label>
+                <input type="text" class="form-control" id="cvv" placeholder="123" required>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Payer</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Paiement mobile -->
+    <div class="col-md-6">
+      <div class="card shadow h-100">
+        <div class="card-body">
+          <h4 class="card-title">Paiement Mobile</h4>
+          <div class="d-grid gap-3">
+            <button class="btn btn-success" onclick="confirmPayment('NatCash')">Payer avec NatCash</button>
+            <button class="btn btn-warning" onclick="confirmPayment('MonCash')">Payer avec MonCash</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Message final -->
+  <div id="confirmationMessage" class="alert alert-success mt-4 d-none">
+    ✅ Merci ! Votre paiement a été confirmé.
+  </div>
+</div>
+
+  <footer class="bg-dark text-white text-center p-4">
+  <p>&copy; 2026 G & G GLOBAL – Tous droits réservés</p>
+  <p>Email : <a href="mailto:GETG@gmail.com" class="text-white">GETGGLOBAL@gmail.com</a> | Téléphone : +509 37322484</p>
+
+  
+  <div class="mt-3 d-flex justify-content-center gap-3">
+    <a href="https://www.facebook.com" target="_blank" class="text-white fs-3 link-primary">
+      <i class="bi bi-facebook"></i>
+    </a>
+    <a href="https://www.instagram.com" target="_blank" class="text-white fs-3 link-danger">
+      <i class="bi bi-instagram"></i>
+    </a>
+    <a href="https://www.whatsapp.com" target="_blank" class="text-white fs-3 link-success">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+    <a href="https://twitter.com" target="_blank" class="text-white fs-3 link-info">
+      <i class="bi bi-twitter-x"></i>
+    </a>
+  </div>
+</footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    const progressBar = document.getElementById("progressBar");
+    const confirmationMessage = document.getElementById("confirmationMessage");
+
+    // Formulaire carte bancaire
+    document.getElementById("cardForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      updateProgress("Confirmation");
+      confirmationMessage.classList.remove("d-none");
+      confirmationMessage.textContent = "✅ Merci ! Votre paiement par carte a été confirmé.";
+    });
+
+    // Paiement mobile
+    function confirmPayment(method) {
+      updateProgress("Confirmation");
+      confirmationMessage.classList.remove("d-none");
+      confirmationMessage.textContent = "✅ Merci ! Votre paiement via " + method + " a été confirmé.";
+    }
+
+    // Mise à jour de la barre de progression
+    function updateProgress(step) {
+      if (step === "Paiement") {
+        progressBar.style.width = "66%";
+        progressBar.textContent = "Paiement";
+      } else if (step === "Confirmation") {
+        progressBar.style.width = "100%";
+        progressBar.textContent = "Confirmation";
+      }
+    }
+  </script>
+</body>
+</html>

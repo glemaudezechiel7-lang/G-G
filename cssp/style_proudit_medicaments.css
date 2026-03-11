@@ -12,6 +12,9 @@
   margin-right: 10px;
 }
 
+.nav-link:hover {
+ color: rgb(214, 145, 17);
+}
 /* Texte du logo */
 .navbar-brand {
   font-weight: bold;
@@ -63,3 +66,5 @@ body {
       transition: 0.3s ease;
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
+
+    

@@ -14,20 +14,25 @@ h1 {
   margin-bottom: 30px;
   animation: fadeInDown 1s ease;
 }
+.nav-link:hover {
+ color: rgb(214, 145, 17);
+}
 
 /* Boutons principaux */
 .btn {
   transition: transform 0.2s ease, box-shadow 0.3s ease;
+  margin-top: 55px;
 }
 
 .btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  
 }
 
 /* Tableau du panier */
 .table {
-  margin-top: 20px;
+  margin-top: 0;
   border-radius: 10px;
   overflow: hidden;
   animation: fadeInUp 1s ease;
@@ -50,16 +55,42 @@ h1 {
 
 /* Total général */
 #cart-total {
+  
   color: #28a745;
   font-size: 1.2rem;
   animation: pulse 2s infinite;
+  
 
+}
+.page-banner {
+            
+  
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Titre principal */
+.page-banner h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #009624;         /* Bleu fin */
+  text-transform: uppercase;       /* Majuscules élégantes */
+  letter-spacing: 2px;             /* Espacement des lettres */
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.2); /* Ombre sur le texte */
+  margin: 0;
+  transition: color 0.3s ease;
 }
 
 
+/* Effet au survol du titre */
+.page-banner h1:hover {
+  color: rgb(214, 145, 17);        /* Doré au survol */
+  cursor: pointer;
+}
+
 /* Footer */
 footer {
-  margin-top: 60px;
+  margin-top: 160px;
   background: #212529;
   color: white;
   padding: 25px;

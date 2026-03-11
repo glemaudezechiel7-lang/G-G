@@ -35,7 +35,9 @@
   font-weight: bold;
   margin-bottom: 10px;
 }
-
+.nav-link:hover {
+ color: rgb(214, 145, 17);
+}
 /* Boutons */
 .btn-success {
   border: 1px solid #000;
@@ -43,13 +45,31 @@
   transition: all 0.3s ease;
 }
 
-.btn-success:hover {
-  background-color: #218838;
-  color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+.page-banner {
+  background: linear-gradient(to right, #e3f2fd, #bbdefb); /* Dégradé bleu clair */
+  border-radius: 12px;             /* Coins arrondis */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Ombre douce */
+  padding: 60px 20px;
+  text-align: center;
 }
 
+/* Titre principal */
+.page-banner h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #009624;         /* Bleu fin */
+  text-transform: uppercase;       /* Majuscules élégantes */
+  letter-spacing: 2px;             /* Espacement des lettres */
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.2); /* Ombre sur le texte */
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+/* Effet au survol du titre */
+.page-banner h1:hover {
+  color: rgb(214, 145, 17);        /* Doré au survol */
+  cursor: pointer;
+}
 /* Avis clients */
 .card.mb-2, .card {
   border: 1px solid #000;

@@ -37,9 +37,13 @@
     </nav>
   </header>
 
-  
+  <section class="page-banner">
+            <div class="banner-content">
+                <h1>Produit informatique</h1>
+            </div>
+        </section>
   <main class="container my-5">
-    <h1 class="text-center mb-4">Produits Informatiques</h1>
+    
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
       
 
@@ -47,7 +51,7 @@
     <div class="card h-100">
       <div class="row row-cols-3 g-1 p-2">
         <div class="col"><img src="image/IPHONE.webp" class="img-fluid rounded" alt="IPHONE"></div>
-        <div class="col"><img src="image/IPHONE1.webp" class="img-fluid rounded" alt="IPHONE"></div>
+        <div class="col"><img src="image/IPHONE1.webp" class="img-fluid rounded" alt="IPHONE"  ></div>
         <div class="col"><img src="image/IPHONE2.webp" class="img-fluid rounded" alt="IPHONE"></div>
         <img src="image/IPHONE.webp" class="card-img-top img-fluid" alt="iPhone 14 Pro">
       </div>
@@ -87,7 +91,7 @@
 
   <div class="col">
     <div class="card h-100">
-      <img src="image/s23.webp" class="card-img-top img-fluid" alt="Samsung Galaxy S23">
+      <img src="image/s23.webp" class="card-img-top img-fluid" alt="Samsung Galaxy S23"  data-bs-toggle="modal" data-bs-target="#modal20">
       <div class="card-body">
         <h5 class="card-title">Samsung Galaxy S23</h5>
         <p class="card-text">
@@ -101,6 +105,14 @@
       </div>
     </div>
   </div>
+
+  <div class="modal fade" id="modal20" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <img src="image/s23.webp" class="img-fluid" alt="robe">
+      </div>
+    </div>
+  </div>  
 
   <!-- Produit 4 : Laptop -->
   <div class="col">
@@ -327,6 +339,30 @@
     </div>
 
     </div>
+
+      <section class="container my-6">
+   
+    <div class="categories-grid d-grid gap-2" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+      <a href="produit_informatique.html" class="text-decoration-none">
+        <div class="p-4 bg-light text-center text-dark fw-bold">Informatique</div>
+      </a>
+      <a href="produit_vetement.html" class="text-decoration-none">
+        <div class="p-4 bg-light text-center text-dark fw-bold">Vêtements</div>
+      </a>
+      <a href="produit_medicament.html" class="text-decoration-none">
+        <div class="p-4 bg-light text-center text-dark fw-bold">Médicaments</div>
+      </a>
+      <a href="produit_cosmetique.html" class="text-decoration-none">
+        <div class="p-4 bg-light text-center text-dark fw-bold">Cosmétiques</div>
+      </a>
+        <a href="produit_appareil_medical.html" class="text-decoration-none">
+        <div class="p-4 bg-light text-center text-dark fw-bold">Appareil medical</div>
+      </a>
+        <a href="produit_livre.html" class="text-decoration-none">
+        <div class="p-4 bg-light text-center text-dark fw-bold">Livres</div>
+      </a>
+    </div>
+  </section>
 
 
     <h3 class="mt-4">Avis clients</h3>
