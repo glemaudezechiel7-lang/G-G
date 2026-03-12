@@ -121,6 +121,7 @@ button:hover {
   transition: color 0.3s ease;
 }
 
+
 /* Footer */
 footer {
   background-color: #0d1b2a;
@@ -179,3 +180,4 @@ footer a:hover {
     font-size: 1.8rem;
   }
 }
+
