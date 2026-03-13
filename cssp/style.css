@@ -1,4 +1,8 @@
 
+
+body{
+  padding-top: 80px;
+}
 /* Bannière principale */
 .page-banner {
   background: linear-gradient(to right, #e3f2fd, #bbdefb); /* Dégradé bleu clair */

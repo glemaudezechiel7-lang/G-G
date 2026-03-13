@@ -14,6 +14,10 @@
     .nav-link:hover {
  color: rgb(214, 145, 17);
 }
+body
+{
+  padding-top: 80px;
+}
 
     /* Cards */
     .card img {
@@ -37,5 +41,17 @@
   gap: 8px;
 }
 
-    /* Footer */
+    .avis-section {
+    margin-bottom: 40px; /* espace avant le footer */
+}
+
+/* Style des cartes */
+.card {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
     

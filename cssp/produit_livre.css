@@ -1,5 +1,7 @@
 
-
+body{
+  padding-top: 80px;
+}
 
 /* Style général des cartes */
 .card {
@@ -74,4 +76,18 @@
 .card.mb-2, .card {
   border: 1px solid #000;
   border-radius: 6px;
+}
+
+.avis-section {
+    margin-bottom: 40px; /* espace avant le footer */
+}
+
+/* Style des cartes */
+.card {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
 }
