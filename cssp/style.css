@@ -5,9 +5,9 @@ body{
 }
 /* Bannière principale */
 .page-banner {
-  background: linear-gradient(to right, #e3f2fd, #bbdefb); /* Dégradé bleu clair */
-  border-radius: 12px;             /* Coins arrondis */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Ombre douce */
+  background: linear-gradient(to right, #e3f2fd, #bbdefb); 
+  border-radius: 12px;           
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); 
   padding: 60px 20px;
   text-align: center;
 }
@@ -16,10 +16,10 @@ body{
 .page-banner h1 {
   font-size: 2.8rem;
   font-weight: bold;
-  color: #009624;         /* Bleu fin */
-  text-transform: uppercase;       /* Majuscules élégantes */
-  letter-spacing: 2px;             /* Espacement des lettres */
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.2); /* Ombre sur le texte */
+  color: #009624;         
+  text-transform: uppercase;      
+  letter-spacing: 2px;             
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
   margin: 0;
   transition: color 0.3s ease;
 }
@@ -32,7 +32,7 @@ body{
 }
 
 .banner-content .btn:hover {
-  background-color: rgb(7, 153, 56); /* Doré au survol */
+  background-color: rgb(7, 153, 56); 
   color: #a03030;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
@@ -40,9 +40,9 @@ body{
 
 .main_index img {
   
-  height: 400px;       /* ajuste selon ton design */
-  width: 100%;         /* occupe toute la largeur de la colonne */
-  border-radius: 8px;  /* arrondit légèrement les coins */
+  height: 400px;       
+  width: 100%;         
+  border-radius: 8px;  
 
   
   object-fit: cover;
@@ -57,12 +57,12 @@ body{
 /* Style du menu */
 .navbar-nav .nav-link {
   font-weight: 500;
-  transition: color 0.3s ease;   /* Transition douce */
+  transition: color 0.3s ease;   
 }
 
 /* Effet au survol */
 .navbar-nav .nav-link:hover {
-  color: rgb(214, 145, 17);      /* Couleur dorée au survol */
+  color: rgb(214, 145, 17);      
 }
 .row {
   margin-top: 100000px;
@@ -70,34 +70,29 @@ body{
 
 /* Grille des catégories */
 .categories-grid a div {
-  border: 1px solid #000;             /* Bordure noire fine */
-  border-radius: 10px;                /* Coins arrondis */
-  background-color: #f8f9fa;          /* Fond clair */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Ombre douce */
-  transition: all 0.3s ease-in-out;   /* Transition fluide */
+  border: 1px solid #000;
+  border-radius: 10px;                
+  background-color: #f8f9fa;          
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); 
+  transition: all 0.3s ease-in-out;   
   cursor: pointer;
 }
 
 /* Effet au survol */
 .categories-grid a div:hover {
-  background-color: rgb(214, 145, 17); /* Doré au survol */
-  color: #fff;                         /* Texte blanc */
-  transform: translateY(-4px);         /* Légère élévation */
-  box-shadow: 0 6px 12px rgba(0,0,0,0.2); /* Ombre plus forte */
+  background-color: rgb(214, 145, 17); 
+  color: #fff;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2); 
 }
 
-/* Titre de section */
-section.container h2 {
-  font-weight: bold;
-  color: rgb(17, 85, 214);             /* Bleu fin pour le titre */
-  margin-bottom: 20px;
-}
+
 
 
 
 /* Bouton grand catalogue */
 .btn-catalogue {
-  background-color: rgb(70, 93, 138);   /* Bleu fin */
+  background-color: rgb(70, 93, 138);
   color: #aedfaa;
   font-size: 1.5rem;
   font-weight: bold;
@@ -110,7 +105,7 @@ section.container h2 {
 
 /* Effet au survol */
 .btn-catalogue:hover {
-  background-color: rgb(214, 145, 17);  /* Doré au survol */
+  background-color: rgb(214, 145, 17);
   color: #fff;
   transform: translateY(-3px);
   box-shadow: 0 6px 16px rgba(0,0,0,0.4);

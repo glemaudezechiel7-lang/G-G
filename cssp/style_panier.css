@@ -3,7 +3,7 @@ body {
   font-family: 'Segoe UI', Arial, sans-serif;
   background: #f4f6f9;
   margin: 0;
-  padding-top: 80px; /* espace pour la navbar fixe */
+  padding-top: 80px; 
   color: #333;
   padding-top: 80px;
 }
@@ -75,10 +75,10 @@ h1 {
 .page-banner h1 {
   font-size: 2.8rem;
   font-weight: bold;
-  color: #009624;         /* Bleu fin */
-  text-transform: uppercase;       /* Majuscules élégantes */
-  letter-spacing: 2px;             /* Espacement des lettres */
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.2); /* Ombre sur le texte */
+  color: #009624;         
+  text-transform: uppercase;      
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.2); 
   margin: 0;
   transition: color 0.3s ease;
 }
@@ -171,6 +171,6 @@ footer {
 
 .categories-grid a div:hover {
   transform: scale(1.05);
-  background-color: #198754; /* vert élégant Bootstrap */
+  background-color: #198754; 
   color: white;
 }

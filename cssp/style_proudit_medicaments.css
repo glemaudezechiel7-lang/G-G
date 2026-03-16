@@ -59,8 +59,9 @@ body {
       flex: 1;
     }
     .card img {
-      height: 220px;       /* hauteur uniforme */
-      object-fit: cover;   /* recadre l’image sans la déformer */
+      height: 220px;       
+      object-fit: cover;  
+      
     }
     .card:hover {
       transform: scale(1.03);
@@ -69,7 +70,7 @@ body {
     }
 
     .avis-section {
-    margin-bottom: 40px; /* espace avant le footer */
+    margin-bottom: 40px; 
 }
 
 /* Style des cartes */

@@ -5,9 +5,9 @@ body{
 
 /* Style général des cartes */
 .card {
-  border: 1px solid #000;        /* Bordure noire fine */
-  border-radius: 8px;            /* Coins arrondis */
-  overflow: hidden;              /* Empêche débordement */
+  border: 1px solid #000;        
+  border-radius: 8px;           
+  overflow: hidden;            
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   transition: transform 0.2s ease-in-out;
 }
@@ -18,11 +18,11 @@ body{
 
 /* Images dans les cartes */
 .card img {
-  width: 100%;                   /* Remplit la largeur */
-  height: 250px;                 /* Hauteur uniforme */
-  object-fit: cover;             /* Coupe proprement */
+  width: 100%;                   
+  height: 250px;               
+  object-fit: cover;             
   display: block;
-  border-bottom: 1px solid #000; /* Séparation nette */
+  border-bottom: 1px solid #000; 
 }
 
 /* Corps des cartes */
@@ -48,9 +48,9 @@ body{
 }
 
 .page-banner {
-  background: linear-gradient(to right, #e3f2fd, #bbdefb); /* Dégradé bleu clair */
-  border-radius: 12px;             /* Coins arrondis */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Ombre douce */
+  background: linear-gradient(to right, #e3f2fd, #bbdefb); 
+  border-radius: 12px;             
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); 
   padding: 60px 20px;
   text-align: center;
 }
@@ -59,17 +59,17 @@ body{
 .page-banner h1 {
   font-size: 2.8rem;
   font-weight: bold;
-  color: #009624;         /* Bleu fin */
-  text-transform: uppercase;       /* Majuscules élégantes */
-  letter-spacing: 2px;             /* Espacement des lettres */
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.2); /* Ombre sur le texte */
+  color: #009624;        
+  text-transform: uppercase;      
+  letter-spacing: 2px;           
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.2); 
   margin: 0;
   transition: color 0.3s ease;
 }
 
 /* Effet au survol du titre */
 .page-banner h1:hover {
-  color: rgb(214, 145, 17);        /* Doré au survol */
+  color: rgb(214, 145, 17);       
   cursor: pointer;
 }
 /* Avis clients */
@@ -79,7 +79,7 @@ body{
 }
 
 .avis-section {
-    margin-bottom: 40px; /* espace avant le footer */
+    margin-bottom: 40px;
 }
 
 /* Style des cartes */
