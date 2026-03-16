@@ -13,6 +13,10 @@
   flex: 1 1 250px; /* largeur minimale des cartes */
   max-width: 300px;
 }
+/*espace por les categorie*/
+.container{
+padding-top: 30px;
+}
 .avis-section {
     margin-bottom: 40px; 
 }

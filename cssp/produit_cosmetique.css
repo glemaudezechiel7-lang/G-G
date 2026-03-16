@@ -114,6 +114,10 @@ body{
   margin: 0;
   transition: color 0.3s ease;
 }
+/*espace pour les categorie*/
+.container{
+padding-top: 30px;
+}
 
 /* Effet au survol du titre */
 .page-banner h1:hover {

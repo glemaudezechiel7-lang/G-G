@@ -47,6 +47,9 @@ body{
   transition: all 0.3s ease;
 }
 
+.container{
+padding-top: 30px;
+}
 .page-banner {
   background: linear-gradient(to right, #e3f2fd, #bbdefb); 
   border-radius: 12px;             
