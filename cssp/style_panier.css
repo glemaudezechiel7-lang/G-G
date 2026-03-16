@@ -154,7 +154,9 @@ html, body {
 main {
   flex: 1; /* pousse le footer vers le bas */
 }
-
+.container{
+padding-top: 30px;
+}
 footer {
   margin-top: auto;
   background-color: #212529;
